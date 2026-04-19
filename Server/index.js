@@ -7,7 +7,7 @@ import questionroute from "./routes/question.js"
 import answerroutes from "./routes/answer.js"
 import languageroutes from "./routes/language.js"
 import payment from "./routes/paymentroutes.js"
-import auth from "../middleware/auth.js";
+import auth from "./middleware/auth.js";
 import postRoutes from "../routes/post.js";
 import authRoutes from "../routes/auth.js";
 import reward from "../routes/reward.js";
