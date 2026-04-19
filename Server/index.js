@@ -12,7 +12,14 @@ import postRoutes from "../routes/post.js";
 import authRoutes from "../routes/auth.js";
 import reward from "../routes/reward.js";
 const app = express();
+app.get("/",(req,res)=>{
+  res.send("API is running");
+})
 dotenv.config();
+const PORT= process.env.PORT || 5000;
+app.listen(PORT, () =>{
+  console.log('server running on port ${PORT}')
+});
 app.use(express.json({ limit: "30mb", extended: true }));
 app.use(express.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
